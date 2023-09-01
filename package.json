@@ -1,0 +1,22 @@
+{
+  "name": "change-focus-with-ink",
+  "dependencies": {
+    "ink": "^4.3.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/ink": "^2.0.3",
+    "@types/react": "^18.2.21",
+    "microbundle": "^0.15.1"
+  },
+  "main": "./index.js",
+  "module": "./index.module.js",
+  "private": true,
+  "scripts": {
+    "build": "microbundle --target node --jsx React.createElement --compress false",
+    "start": "node index.module.js",
+    "watch": "microbundle watch --target node --jsx React.createElement --compress false"
+  },
+  "source": "./index.jsx",
+  "type": "module"
+}
